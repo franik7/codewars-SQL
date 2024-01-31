@@ -4,3 +4,19 @@ select * from people
 where age > 50 
 order by age desc
 
+
+//On the Canadian Border (SQL for Beginners #2)
+select * from travelers
+where country NOT IN ('Canada', 'Mexico', 'USA')
+
+
+//SQL Basics: Simple DISTINCT
+-- Create your SELECT statement here
+select distinct age from people 
+
+
+//Best-Selling Books (SQL for Beginners #5)
+-- Your Code Here
+select * from books
+order by copies_sold desc
+limit 5
