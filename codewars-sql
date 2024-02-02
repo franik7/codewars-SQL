@@ -20,3 +20,9 @@ select distinct age from people
 select * from books
 order by copies_sold desc
 limit 5
+
+
+//Adults only (SQL for Beginners #1)
+--Your code here
+select name, age from users
+where age >= 18
