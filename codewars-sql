@@ -26,3 +26,10 @@ limit 5
 --Your code here
 select name, age from users
 where age >= 18
+
+
+//Collect Tuition (SQL for Beginners #4)
+-- Your Code Here
+select * from students
+where tuition_received = false
+
