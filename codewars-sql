@@ -41,3 +41,10 @@ SELECT age, COUNT(*) as people_count FROM people GROUP BY age;
 //SQL Grasshopper: Select Columns
 -- Type your SQL here
 select custid, custname, custstate from customers;
+
+
+//GROCERY STORE: Inventory
+-- select all of the items
+SELECT id, name, stock from products
+where stock < 3
+order by products.id
