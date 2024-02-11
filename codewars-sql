@@ -48,3 +48,10 @@ select custid, custname, custstate from customers;
 SELECT id, name, stock from products
 where stock < 3 AND producent = 'CompanyA'
 order by products.id
+
+
+//Century From Year
+--your statment goes here--
+select 
+ceil(yr / 100.0) as century
+from years;
