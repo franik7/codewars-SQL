@@ -55,3 +55,8 @@ order by products.id
 select 
 ceil(yr / 100.0) as century
 from years;
+
+
+//Easy SQL: Cube Root and Natural Log
+/*  SQL  */
+select cbrt(number1) as cuberoot, ln(number2) as logarithm from decimals;
