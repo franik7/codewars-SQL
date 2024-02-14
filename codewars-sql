@@ -66,3 +66,9 @@ select cbrt(number1) as cuberoot, ln(number2) as logarithm from decimals;
 /*  SQL  */
 select * from companies
 order by employees desc;
+
+
+//SQL with LOTR: Elven Wildcards
+--but on the land of Lórien no shadow lay--
+select concat(initcap(firstname),' ', initcap(lastname)) as shortlist from elves
+where firstname LIKE '%tegil%' OR lastname LIKE '%astar%';
