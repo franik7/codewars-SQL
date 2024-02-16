@@ -72,3 +72,12 @@ order by employees desc;
 --but on the land of Lórien no shadow lay--
 select concat(initcap(firstname),' ', initcap(lastname)) as shortlist from elves
 where firstname LIKE '%tegil%' OR lastname LIKE '%astar%';
+
+
+//SQL with Pokemon: Damage Multipliers
+-- i choose you! --
+select pokemon.pokemon_name, pokemon.str * multipliers.multiplier as modifiedStrength, multipliers.element 
+from pokemon 
+join multipliers on pokemon.element_id=multipliers.id
+where pokemon.str * multipliers.multiplier > 39
+order by pokemon.str * multipliers.multiplier desc
