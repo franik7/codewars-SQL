@@ -81,3 +81,17 @@ from pokemon
 join multipliers on pokemon.element_id=multipliers.id
 where pokemon.str * multipliers.multiplier > 39
 order by pokemon.str * multipliers.multiplier desc
+
+
+//SQL with Harry Potter: Sorting Hat Comparators
+/* Oh you may not think I'm pretty,
+But don't judge on what you see,
+I'll eat myself if you can find
+A smarter hat than me. */
+
+select id, name, quality1, quality2 from students
+where quality1 = 'evil' AND quality2 = 'cunning' OR
+quality1 = 'brave' AND quality2 != 'evil' OR 
+quality1 = 'studious' OR quality2 = 'intelligent' OR quality1 = 'intelligent' OR quality2 = 'studious' OR
+quality1 = 'hufflepuff' OR quality2 = 'hufflepuff'
+order by id;
