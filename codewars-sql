@@ -95,3 +95,8 @@ quality1 = 'brave' AND quality2 != 'evil' OR
 quality1 = 'studious' OR quality2 = 'intelligent' OR quality1 = 'intelligent' OR quality2 = 'studious' OR
 quality1 = 'hufflepuff' OR quality2 = 'hufflepuff'
 order by id;
+
+
+//SQL Basics: Repeat and Reverse
+/*  SQL  */
+select CONCAT(name,name,name) as name, reverse(characteristics) as characteristics from monsters 
