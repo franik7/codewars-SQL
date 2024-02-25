@@ -105,3 +105,8 @@ select CONCAT(name,name,name) as name, reverse(characteristics) as characteristi
 //SQL Basics: Simple MIN / MAX
 -- Create your SELECT statement 
 select min(age) as age_min, max(age) as age_max from people
+
+
+//SQL Basics: Mod
+/*  SQL  */
+select mod(number1, number2) from decimals
