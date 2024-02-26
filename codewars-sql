@@ -109,4 +109,11 @@ select min(age) as age_min, max(age) as age_max from people
 
 //SQL Basics: Mod
 /*  SQL  */
-select mod(number1, number2) from decimals
+select mod(number1, number2) from decimals.
+
+
+//Easy SQL: Counting and Grouping
+/*  SQL  */
+select race, count(race) from demographics
+group by race
+order by count(race) desc
