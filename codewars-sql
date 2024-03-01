@@ -132,3 +132,11 @@ select products.id, products.name,
 products.isbn, products.company_id,
 products.price, companies.name as company_name from products 
 join companies on products.company_id = companies.id
+
+
+//GROCERY STORE: Support Local Products
+-- Replace with your SQL Query
+select country, count(products.id) as products from products  
+where country IN ('United States of America', 'Canada')
+group by country
+order by count(products.id) desc
