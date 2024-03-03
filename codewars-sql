@@ -140,3 +140,8 @@ select country, count(products.id) as products from products
 where country IN ('United States of America', 'Canada')
 group by country
 order by count(products.id) desc
+
+
+//SQL: Concatenating Columns
+/*  SQL  */
+select concat(prefix,' ',first,' ',last,' ',suffix) as title from names
