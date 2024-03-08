@@ -145,3 +145,9 @@ order by count(products.id) desc
 //SQL: Concatenating Columns
 /*  SQL  */
 select concat(prefix,' ',first,' ',last,' ',suffix) as title from names
+
+
+//1. Find all active students
+-- Type your query here
+select * from students
+where isActive = 1
