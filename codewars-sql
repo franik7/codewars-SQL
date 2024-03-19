@@ -151,3 +151,8 @@ select concat(prefix,' ',first,' ',last,' ',suffix) as title from names
 -- Type your query here
 select * from students
 where isActive = 1
+
+
+//Easy SQL: LowerCase
+/*  SQL  */
+select id, name, birthday, lower(race) as race from demographics
