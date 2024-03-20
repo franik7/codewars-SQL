@@ -156,3 +156,8 @@ where isActive = 1
 //Easy SQL: LowerCase
 /*  SQL  */
 select id, name, birthday, lower(race) as race from demographics
+
+
+//Easy SQL: Rounding Decimals
+/*  SQL  */
+select floor(number1) as number1, ceiling(number2) as number2 from decimals
