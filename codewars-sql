@@ -161,3 +161,9 @@ select id, name, birthday, lower(race) as race from demographics
 //Easy SQL: Rounding Decimals
 /*  SQL  */
 select floor(number1) as number1, ceiling(number2) as number2 from decimals
+
+
+//GROCERY STORE: Real Price!
+-- Replace with your SQL Query
+select name, price, round((price / (weight / 1000))::numeric, 2)::float as price_per_kg, weight from products
+order by price_per_kg asc, name asc
