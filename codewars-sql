@@ -167,3 +167,8 @@ select floor(number1) as number1, ceiling(number2) as number2 from decimals
 -- Replace with your SQL Query
 select name, price, round((price / (weight / 1000))::numeric, 2)::float as price_per_kg, weight from products
 order by price_per_kg asc, name asc
+
+
+//Easy SQL: Convert to Hexadecimal
+/*  SQL  */
+select to_hex(legs) as legs, to_hex(arms) as arms from monsters 
