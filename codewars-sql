@@ -172,3 +172,9 @@ order by price_per_kg asc, name asc
 //Easy SQL: Convert to Hexadecimal
 /*  SQL  */
 select to_hex(legs) as legs, to_hex(arms) as arms from monsters 
+
+
+//Register for the Party (SQL for Beginners #3)
+INSERT INTO participants  (name, age, attending)
+VALUES ('f', 33, TRUE);
+SELECT * FROM participants;
