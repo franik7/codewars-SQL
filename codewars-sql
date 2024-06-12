@@ -178,3 +178,8 @@ select to_hex(legs) as legs, to_hex(arms) as arms from monsters
 INSERT INTO participants  (name, age, attending)
 VALUES ('f', 33, TRUE);
 SELECT * FROM participants;
+
+
+//SQL Basics: Simple SUM
+-- Create your SELECT statement here
+select sum(age) as age_sum from people
